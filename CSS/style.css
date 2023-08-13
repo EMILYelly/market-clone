@@ -1,0 +1,87 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "main.css";
+
+:root {
+  --button-primary: #fe6f0f;
+  --button-hover: rgba(254, 195, 15, 1);
+}
+
+/* 바디영역에 프리텐다드 폰트를 적용한다. */
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 글쓰기 버튼 */
+.write-btn {
+  position: fixed;
+  bottom: 150px;
+  right: 40px;
+  background-color: var(--button-primary);
+  color: white;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
+}
+
+.media-info-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background-color: salmon;
+}
+
+/* 페이지 사이즈 안내 문구 */
+.media-info-msg-big {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background-color: salmon;
+}
+
+.media-info-msg-small {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 630px) {
+  .media-info-msg-big {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .media-info-msg-small {
+    display: none;
+  }
+}
