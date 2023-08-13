@@ -34,19 +34,6 @@ body {
   background-color: var(--button-hover);
 }
 
-.media-info-msg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  background-color: salmon;
-}
-
 /* 페이지 사이즈 안내 문구 */
 .media-info-msg-big {
   position: fixed;
